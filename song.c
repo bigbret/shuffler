@@ -45,12 +45,12 @@ void songInfo(Song* song){
 }
 
 
-int main(int argc, char *argv[]){
+/*int main(int argc, char *argv[]){
     Song* my = createSong("MySong", "Bret Miller", "R&B", 95);
 
     songInfo(my);
 
-}
+}*/
 
 
 
