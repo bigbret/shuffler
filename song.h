@@ -32,6 +32,9 @@ Song* createSong(char title[], char artist[], char genre[], int length);
 //This will deallocate the memory associated with a song struct 
 void songOver(Song* out);
 
+//this will be a position updating function for the song 
+void postUpdate(Song* sng, int pos);
+
 //This will be used to print out the info about a song
 void songInfo(Song* song);
 

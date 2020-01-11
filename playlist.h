@@ -34,4 +34,10 @@ void addSong(Playlist* plist, Song* sng);
 //This is a playlist mapping function
 void llPrint(void* data);
 
+//This is a function to print out the playlist
+void playlistPrint(Playlist* pl);
+
+//this will be a playlist shuffling function 
+
+
 #endif /*end of playlist.h */

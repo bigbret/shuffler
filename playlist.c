@@ -28,14 +28,22 @@ void addSong(Playlist* plist, Song* sng){
     //First need to grab the linked list out of the playlist 
     LinkedList* ll = plist->plist;
     ll_push(ll, sng);
-    ll_map(ll, llPrint);
 }
 
 //here is a mapping function to pass to the linkedlist mapping function
 void llPrint(void* data){
     Song* out = (Song*)data; 
-    printf("The name of the Song is: %s\n", out->title);
+    printf("Song #: %d\nTitle: %s\nArist: %s\nGenre: %s\n\n",out->position, out->title, out->artist, out->genre);
 }
+
+//This will be a function that will be used to print out the entirety of the playlist 
+void playlistPrint(Playlist* pl){
+    printf("Playlist: %s\n", pl->name);
+    ll_map(pl->plist, llPrint);
+}
+
+//This will be a playlist shuffling function 
+
 
 
 
@@ -47,6 +55,14 @@ int main(int argc, char* argv[]){
     addSong(p, sng);
     //To do, Create another playlist and check the sheet to make sure that you are
     //following along with the functionality needed to make this work
-    
+    Song* sng2 = createSong("Hot", "Young Thug", "Rap", 132 );
+    Song* sng3 = createSong("Dance Monkey", "Two Tones", "Pop", 180);
+    Song* sng4 = createSong("Are You Up", "The Phantoms", "EDM", 165);
+    Song* sng5 = createSong("Something About You", "Rudimental", "EDM", 190);
+    addSong(p, sng2);
+    addSong(p, sng3);
+    addSong(p, sng4);
+    addSong(p, sng5);
+    playlistPrint(p);
     return 0;
 }

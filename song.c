@@ -37,6 +37,11 @@ void songOver(Song* out){
     free(out);
 }
 
+//This will be a position update function that will be able to change the songs position
+void postUpdate(Song* sng, int pos){
+    
+}
+
 //This will be a function to print out the information about a song 
 void songInfo(Song* song){
     printf("%s\n", (song->title));
