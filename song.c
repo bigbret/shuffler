@@ -24,6 +24,7 @@ Song* createSong(char title[], char artist[], char genre[], int length){
     newSong->length = length;
     newSong->position = 0;
     newSong->pop = 0;
+    newSong->plays = 0; 
 
     
 

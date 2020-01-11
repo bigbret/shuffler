@@ -38,11 +38,15 @@ void llPrint(void* data){
 }
 
 
+
 int main(int argc, char* argv[]){
     char* c = "Bret's";
     Playlist* p = newPlaylist(c);
     printf("The name of the playlist is: %s\n", p->name);
     Song* sng = createSong("Hello", "Adele", "Pop", 125);
     addSong(p, sng);
+    //To do, Create another playlist and check the sheet to make sure that you are
+    //following along with the functionality needed to make this work
+    
     return 0;
 }

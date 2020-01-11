@@ -21,6 +21,7 @@ typedef struct{
     int length; //this will hold the duration of the song (Unknown Use yet, but good information)
     int position; //this will hold where it is in the line
     int pop; //this will be a scale of popularity (Possibly out of 100?) This should be of the artist + song
+    int plays; //this will be the number of plays that a song has had, can be an indicator of popularity
 
 }Song;
 
